@@ -31,9 +31,9 @@ def python_text(text="is cool"):
     return f"Python {text}"
 
 @app.route('/number/<n>', strict_slashes=False)
-def is_a_integer(number):
-    if isinstance(number, int):
-        return f"{number} is a number"
+def is_a_integer(n):
+    if isinstance(n, int):
+        return f"{n} is a number"
     return
 
 
