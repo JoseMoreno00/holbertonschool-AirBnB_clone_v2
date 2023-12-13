@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>HBNB</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>States</H1>
+        <UL>
+            {% for idx in sl|sort(attribute='name') %}
+            <LI>{{ idx.id }}: <B>{{ idx.name }}</B></LI>
+            {% endfor %}
+        </UL>
+    </BODY>
+</HTML>
